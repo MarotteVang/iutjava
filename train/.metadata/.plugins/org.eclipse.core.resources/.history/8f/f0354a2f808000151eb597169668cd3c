@@ -1,0 +1,18 @@
+package edu.iut.app;
+
+import java.util.ArrayList;
+
+public abstract class AbstractApplicationLog implements IApplicationLog {
+
+	protected String message;
+	/** Tableau au sens des collections **/
+	protected /*TYPE TABLEAU*/ listeners;
+	
+	public AbstractApplicationLog() {
+		message = null;
+		listeners = new /*TYPE TABLEAU*/();
+	}
+	
+    /** Fonction venant de l'interface par héritage */
+
+}

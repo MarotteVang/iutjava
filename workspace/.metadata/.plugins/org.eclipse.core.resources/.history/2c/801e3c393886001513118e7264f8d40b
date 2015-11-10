@@ -1,0 +1,18 @@
+package edu.iut.exceptions;
+
+// Exercice 2 
+public class IUTException /* étendre les exceptio, */{
+	public IUTException() {
+		super();
+		edu.iut.app.ApplicationSession.instance().getExceptionLogger().severe("empty");
+	}
+	public IUTException(IUTException e) {
+		super (e);
+		edu.iut.app.ApplicationSession.instance().getExceptionLogger().severe(e.getMessage());
+	}
+	public IUTException(String message) {
+		super(message);
+		edu.iut.app.ApplicationSession.instance().getExceptionLogger().severe(message);
+	}
+	
+}
