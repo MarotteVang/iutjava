@@ -1,21 +1,2 @@
 INDEX VERSION 1.127+D:\Cours\S3\CPOB\iutjava\workspace\.metadata\.plugins\org.eclipse.jdt.core
-3744470734.index
-2014229907.index
-2818098154.index
-2553333963.index
-3701790501.index
-3432894963.index
-3984597191.index
-967264707.index
-1399774931.index
-1871575782.index
-1307082495.index
-4057617258.index
-3415228877.index
-4224158850.index
-3174735214.index
-344247264.index
-3249618979.index
-1146398587.index
-1256399359.index
-1389571250.index
+1083867703.index
