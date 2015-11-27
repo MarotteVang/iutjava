@@ -1,8 +1,9 @@
 package edu.iut.app;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Agenda extends ExamEvent {
+public class Agenda extends ArrayList<ExamEvent> {
 	public Agenda() {		
 	}
 	
