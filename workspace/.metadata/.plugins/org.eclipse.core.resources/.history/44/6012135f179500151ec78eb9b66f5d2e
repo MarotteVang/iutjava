@@ -66,10 +66,6 @@ public class SchedulerFrame extends JFrame {
 		JMenuItem about;
 		int currentYear = 2015;
 		
-		SpinnerModel model1 = new SpinnerNumberModel(currentYear, currentYear - 15, currentYear + 5, 1);
-		JSpinner model = new JSpinner(model1);
-
-		
 		file = new JMenu("File");
 		menuBar.add(file);
 		load = new JMenuItem("Load", KeyEvent.VK_T);
@@ -97,7 +93,10 @@ public class SchedulerFrame extends JFrame {
 		about = new JMenuItem("About", KeyEvent.VK_T);
 		help.add(about);
 		
-				
+		SpinnerModel model1 = new SpinnerNumberModel(currentYear, currentYear - 15, currentYear + 5, 1);
+		
+		JSpinner model = new JSpinner(model1);
+		
 		this.add(model);
 		this.setJMenuBar(menuBar);
 		this.pack();

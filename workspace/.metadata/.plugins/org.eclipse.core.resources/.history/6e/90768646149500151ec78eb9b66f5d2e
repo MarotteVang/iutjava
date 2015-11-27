@@ -13,10 +13,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JSpinner;
 import javax.swing.JSplitPane;
-import javax.swing.SpinnerModel;
-import javax.swing.SpinnerNumberModel;
 
 import edu.iut.gui.widget.agenda.AgendaPanelFactory;
 import edu.iut.gui.widget.agenda.ControlAgendaViewPanel;
@@ -50,12 +47,8 @@ public class SchedulerFrame extends JFrame {
 		this.setContentPane(splitPane);
 		
 		JMenuBar menuBar = new JMenuBar();
-		JMenu menu;
-		JMenu file;		
+		JMenu menu;		
 		JMenuItem menuItem;
-		JMenuItem load;
-		JMenuItem save;
-		JMenuItem quit;
 		JMenu edit;
 		JMenu view;
 		JMenuItem month;
@@ -64,41 +57,25 @@ public class SchedulerFrame extends JFrame {
 		JMenu help;
 		JMenuItem display;
 		JMenuItem about;
-		int currentYear = 2015;
 		
-		SpinnerModel model1 = new SpinnerNumberModel(currentYear, currentYear - 15, currentYear + 5, 1);
-		JSpinner model = new JSpinner(model1);
-
+		menu = new JMenu("File");
+		menuBar.add(menu);
+		menuItem = new JMenuItem("Load", KeyEvent.VK_T);
+		menu.add(menuItem);
+		menuItem = new JMenuItem("Save", KeyEvent.VK_T);
+		menu.add(menuItem);
+		menuItem = new JMenuItem("Quit", KeyEvent.VK_T);
+		menu.add(menuItem);
 		
-		file = new JMenu("File");
-		menuBar.add(file);
-		load = new JMenuItem("Load", KeyEvent.VK_T);
-		file.add(load);
-		save = new JMenuItem("Save", KeyEvent.VK_T);
-		file.add(save);
-		quit = new JMenuItem("Quit", KeyEvent.VK_T);
-		file.add(quit);
+		menu = new JMenu("Edit");
+		menuBar.add(menu);
+		menuItem = new JMenuItem("Month", KeyEvent.VK_T);
+		menu.add(menuItem);
+		menuItem = new JMenuItem("Week", KeyEvent.VK_T);
+		menu.add(menuItem);
+		menuItem = new JMenuItem("Day", KeyEvent.VK_T);
+		menu.add(menuItem);
 		
-		edit = new JMenu("Edit");
-		menuBar.add(edit);
-		view = new JMenu("View");
-		edit.add(view);
-		month = new JMenuItem("Month", KeyEvent.VK_T);
-		view.add(month);
-		week = new JMenuItem("Week", KeyEvent.VK_T);
-		view.add(week);
-		day = new JMenuItem("Day", KeyEvent.VK_T);
-		view.add(day);
-		
-		help = new JMenu("Help");
-		menuBar.add(help);
-		display = new JMenuItem("Display", KeyEvent.VK_T);
-		help.add(display);
-		about = new JMenuItem("About", KeyEvent.VK_T);
-		help.add(about);
-		
-				
-		this.add(model);
 		this.setJMenuBar(menuBar);
 		this.pack();
 		layerLayout.next(contentPane);
