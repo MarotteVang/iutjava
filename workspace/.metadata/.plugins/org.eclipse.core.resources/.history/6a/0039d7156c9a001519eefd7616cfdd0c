@@ -1,0 +1,22 @@
+package edu.iut.app;
+
+import java.util.LinkedList;
+
+import javax.lang.model.element.Element;
+import javax.xml.parsers.DocumentBuilder;
+
+
+public class Agenda extends LinkedList<ExamEvent> {
+	
+	DocumentBuilder document;
+	Document doc;
+	Element root;
+	
+	public Agenda() {		
+	}
+	
+	public void addCheckedEvent(ExamEvent examEvent) {
+		this.add(examEvent);
+	}
+	
+}
