@@ -1,0 +1,24 @@
+package projet_java;
+
+import java.sql.Time;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Event {
+	private Date dateEvent;
+	private Time heureEvent;
+	private Person student;
+	private ArrayList<Person> jury;
+	
+	public Event() {
+		this.dateEvent = null;
+		this.heureEvent = null;
+		this.student = new Person();
+		this.jury= new ArrayList<Person>();
+		
+	}
+	
+	public Event(Date date, Time heure, Person student, ArrayList<Person> jury){
+		
+	}
+}

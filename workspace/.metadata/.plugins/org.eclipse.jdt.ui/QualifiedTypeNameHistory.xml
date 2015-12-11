@@ -11,4 +11,7 @@
 <fullyQualifiedTypeName name="javax.swing.SpinnerModel"/>
 <fullyQualifiedTypeName name="javax.swing.SpinnerNumberModel"/>
 <fullyQualifiedTypeName name="javax.swing.JSpinner"/>
+<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
+<fullyQualifiedTypeName name="javax.lang.model.element.Element"/>
+<fullyQualifiedTypeName name="javax.xml.stream.events.Comment"/>
 </qualifiedTypeNameHistroy>

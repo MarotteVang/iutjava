@@ -27,10 +27,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="D:\Cours\S3\Projet_Tutore\Projet_CPOB\src"/>
+			<item value="C:\Users\Guillaume\Desktop\TP4\src"/>
+			<item value="D:\Cours\S3\CPOB\iutjava\workspace\iuttp3\src"/>
 			<item value="D:\Cours\S3\CPOB\iutjava\workspace\TP3\src"/>
 			<item value="G:\IUTTrainTP2\src"/>
-			<item value="D:\Cours\S3\CPOB\iutjava\workspace\iuttp2\src"/>
-			<item value="D:\Cours\S3\CPOB\iutjava\workspace\iuttp2\src\edu"/>
 		</list>
 	</section>
 </section>
